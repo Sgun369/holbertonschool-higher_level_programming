@@ -2,7 +2,11 @@
 def print_matrix_integer(matrix=[[]]):
     if not matrix[0]:
         print()
-        return
-    for row in matrix:
-        row_str = " ".join(map(str, row))
-        print("{}".format(row_str))
+    lena = len(matrix)
+    for a in range(lena):
+        lenb = len(matrix[a])
+        for b in range(lenb):
+            if b == lenb - 1:
+                print("{:d}".format(matrix[a][b]))
+            else:
+                print("{:d}".format(matrix[a][b]), end=" ")
