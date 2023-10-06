@@ -1,13 +1,11 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    result = []
+    result_matrix = []
+
     for row in matrix:
         squared_row = []
-        for value in row:
-            if isinstance(value, int):
-                squared_row.append(value ** 2)
-            else:
-                squared_row.append(value)
-        result.append(squared_row)
+        for num in row:
+            squared_row.append(num ** 2)
+        result_matrix.append(squared_row)
 
-    return result
+    return result_matrix
