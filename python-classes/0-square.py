@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""an empty class square"""
+'''an empty class '''
 
 
 class square:
