@@ -3,4 +3,5 @@
 
 
 class Rectangle:
+    """a class that defines a rrectangle"""
     pass
