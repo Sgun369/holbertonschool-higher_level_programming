@@ -3,8 +3,10 @@
 a module that contains a function
 that returns the sum of two integers a and b
 """
+
+
 def add_integer(a, b=98):
-    """ 
+    """
     a function that adds 2 integers
     a and b
     """
