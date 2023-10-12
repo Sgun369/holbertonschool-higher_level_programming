@@ -32,4 +32,4 @@ import:
     File "/home/sgun369/holbertonschool-higher_level_programming/python-test_driven_development/0-add_integer.py", line 12, in add_integer
         raise TypeError("a must be an integer ")
     TypeError: a must be an integer
-
+    >>>
