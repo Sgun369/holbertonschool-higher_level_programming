@@ -1,0 +1,14 @@
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+>>> say_my_name("John", "Doe")
+My name is John Doe
+>>> say_my_name("Alice")
+My name is Alice 
+>>> say_my_name("John", 369)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/sgun369/holbertonschool-higher_level_programming/python-test_driven_development/3-say_my_name.py", line 20, in say_my_name
+    raise TypeError("last name must be a string")
+TypeError: last name must be a string       
+>>> say_my_name("Same", "369")
+My name is Same 369
+>>> 
