@@ -8,12 +8,6 @@ def text_indentation(text):
     """
     print the text with two new lines after each of the
     characters '.', '?', and ':'.
-
-    parameters:
-        tect(str): The input text.
-
-    Raises:
-        TypeError: If the text is not a string.
     """
 
     if not isinstance(text, str):
