@@ -1,0 +1,69 @@
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+>>> text_indentation("")
+>>> text_indentation("This is a test without any special characters.")
+This is a test without any special characters.
+
+>>> text_indentation(" Test with leading and trailing spaces. ")
+Test with leading and trailing spaces.
+
+>>> text_indentation("test with...multiple...dots?? and more: colons.")
+test with.
+
+.
+
+.
+
+multiple.
+
+.
+
+.
+
+dots?
+
+?
+
+and more:
+
+colons.
+
+>>> text_indentation(":start whith a colon. and more? and again?: and more text.")
+:
+
+start whith a colon.
+
+and more?
+
+and again?
+
+:
+
+and more text.
+
+>>> text_indentation(""No spaces.herearemypecialcharacter.dots?colons:")
+  File "<stdin>", line 1
+    text_indentation(""No spaces.herearemypecialcharacter.dots?colons:")
+                     ^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+>>> text_indentation("special . . . spaced ? ? ? colons : : : test.")
+special .
+
+.
+
+.
+
+spaced ?
+
+?
+
+?
+
+colons :
+
+:
+
+:
+
+test.
+
+>>> 
