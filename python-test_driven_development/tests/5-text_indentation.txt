@@ -1,45 +1,44 @@
 >>> text_indentation = __import__('5-text_indentation').text_indentation
 >>> text_indentation("")
 >>> text_indentation("This is a test without any special characters.")
-This is a test without any special characters.
-
+This is a test without any special characters.<BLANKLINE>
 >>> text_indentation(" Test with leading and trailing spaces. ")
 Test with leading and trailing spaces.
-
+<BLANKLINE>
 >>> text_indentation("test with...multiple...dots?? and more: colons.")
 test with.
-
+<BLANKLINE>
 .
-
+<BLANKLINE>
 .
-
+<BLANKLINE>
 multiple.
-
+<BLANKLINE>
 .
-
+<BLANKLINE>
 .
-
+<BLANKLINE>
 dots?
-
+<BLANKLINE>
 ?
-
+<BLANKLINE>
 and more:
-
+<BLANKLINE>
 colons.
-
+<BLANKLINE>
 >>> text_indentation(":start whith a colon. and more? and again?: and more text.")
 :
-
+<BLANKLINE>
 start whith a colon.
-
+<BLANKLINE>
 and more?
-
+<BLANKLINE>
 and again?
-
+<BLANKLINE>
 :
-
+<BLANKLINE>
 and more text.
-
+<BLANKLINE>
 >>> text_indentation(""No spaces.herearemypecialcharacter.dots?colons:")
   File "<stdin>", line 1
     text_indentation(""No spaces.herearemypecialcharacter.dots?colons:")
@@ -47,23 +46,23 @@ and more text.
 SyntaxError: invalid syntax. Perhaps you forgot a comma?
 >>> text_indentation("special . . . spaced ? ? ? colons : : : test.")
 special .
-
+<BLANKLINE> 
 .
-
+<BLANKLINE>
 .
-
+<BLANKLINE>
 spaced ?
-
+<BLANKLINE>
 ?
-
+<BLANKLINE>
 ?
-
+<BLANKLINE>
 colons :
-
+<BLANKLINE>
 :
-
+<BLANKLINE>
 :
-
+<BLANKLINE>
 test.
-
+<BLANKLINE>
 >>>
