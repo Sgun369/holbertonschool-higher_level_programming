@@ -1,11 +1,28 @@
 #!/usr/bin/python3
+"""
+This module defines the Rectangle class.
+"""
+
+
 class Rectangle:
-    """A class to define a rectangle."""
+    """
+    This class represents a rectangle.
+
+    Attributes:
+        __width (int): The width of the rectangle.
+        __height (int): The height of the rectangle.
+    """
 
     def __init__(self, width=0, height=0):
-        """Initialize a rectangle with optional width and height."""
-        self.__width = width
-        self.__height = height
+        """
+        Initialize a new Rectangle.
+
+        Args:
+            width (int, optional): The width of the rectangle (default is 0).
+            height (int, optional): The height of the rectangle (default is 0).
+        """
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
@@ -14,26 +31,28 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
-        """set the width of the rectangle with error checks"""
+        """Set the width of the rectangle."""
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
-        self.__width = value
+        else:
+            self.__width = value
 
     @property
     def height(self):
-        """get the height of the rectangle."""
+        """Get the height of the rectangle."""
         return self.__height
 
     @height.setter
     def height(self, value):
-        """set the height of the rectangle with error checks"""
+        """Set the height of the rectangle."""
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
-        self.__height = value
+        else:
+            self.__height = value
 
     def area(self):
         """calculate and return the area of the rectangle"""
