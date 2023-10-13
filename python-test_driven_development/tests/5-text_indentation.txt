@@ -40,9 +40,7 @@ and again?
 and more text.
 <BLANKLINE>
 >>> text_indentation(""No spaces.herearemypecialcharacter.dots?colons:")
-  File "<stdin>", line 1
-    text_indentation(""No spaces.herearemypecialcharacter.dots?colons:")
-                     ^^^^
+...
 SyntaxError: invalid syntax. Perhaps you forgot a comma?
 >>> text_indentation("special . . . spaced ? ? ? colons : : : test.")
 special .
