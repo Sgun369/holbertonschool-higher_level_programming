@@ -11,4 +11,15 @@ Traceback (most recent call last):
 TypeError: last name must be a string       
 >>> say_my_name("Same", "369")
 My name is Same 369
->>> 
+>>> say_my_name(True)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/sgun369/holbertonschool-higher_level_programming/python-test_driven_development/3-say_my_name.py", line 19, in say_my_name
+    raise TypeError("first_name must be a string")
+TypeError: first_name must be a string
+>>> say_my_name(None)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/sgun369/holbertonschool-higher_level_programming/python-test_driven_development/3-say_my_name.py", line 19, in say_my_name
+    raise TypeError("first_name must be a string")
+TypeError: first_name must be a string
