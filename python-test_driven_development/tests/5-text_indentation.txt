@@ -1,66 +1,41 @@
 >>> text_indentation = __import__('5-text_indentation').text_indentation
->>> text_indentation("")
->>> text_indentation("This is a test without any special characters.")
-This is a test without any special characters.<BLANKLINE>
->>> text_indentation(" Test with leading and trailing spaces. ")
-Test with leading and trailing spaces.
-<BLANKLINE>
->>> text_indentation("test with...multiple...dots?? and more: colons.")
-test with.
-<BLANKLINE>
-.
-<BLANKLINE>
-.
-<BLANKLINE>
-multiple.
-<BLANKLINE>
-.
-<BLANKLINE>
-.
-<BLANKLINE>
-dots?
-<BLANKLINE>
-?
-<BLANKLINE>
-and more:
-<BLANKLINE>
-colons.
-<BLANKLINE>
->>> text_indentation(":start whith a colon. and more? and again?: and more text.")
-:
-<BLANKLINE>
-start whith a colon.
-<BLANKLINE>
-and more?
-<BLANKLINE>
-and again?
-<BLANKLINE>
-:
-<BLANKLINE>
-and more text.
-<BLANKLINE>
->>> text_indentation(""No spaces.herearemypecialcharacter.dots?colons:")
-...
+>>> text_indentation("i am that i am")
+i am that i am>>> 
+>>> text_indentation("i . am the alpha? end: the omega.")
+i .
+
+am the alpha?
+
+end:
+
+the omega.
+
+>>> text_indentation(i am that i am)
+  File "<stdin>", line 1
+    text_indentation(i am that i am)
+                     ^^^^
 SyntaxError: invalid syntax. Perhaps you forgot a comma?
->>> text_indentation("special . . . spaced ? ? ? colons : : : test.")
-special .
-<BLANKLINE> 
+>>> text_indentation("who are we? why are we here?")
+who are we?
+
+why are we here?
+
+>>> text_indentation("i really . don't know . . Really?")
+i really .
+
+don't know .
+
 .
-<BLANKLINE>
+
+Really?
+
+>>> text_indentation("whaaaaaat      t  t t t t t t ttt t ? : ? .")
+whaaaaaat      t  t t t t t t ttt t ?
+
+:
+
+?
+
 .
-<BLANKLINE>
-spaced ?
-<BLANKLINE>
-?
-<BLANKLINE>
-?
-<BLANKLINE>
-colons :
-<BLANKLINE>
-:
-<BLANKLINE>
-:
-<BLANKLINE>
-test.
-<BLANKLINE>
->>>
+
+>>> 
