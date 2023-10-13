@@ -3,39 +3,33 @@
 i am that i am>>> 
 >>> text_indentation("i . am the alpha? end: the omega.")
 i .
-
+<BLANKLINE>
 am the alpha?
-
+<BLANKLINE>
 end:
-
+<BLANKLINE>
 the omega.
-
->>> text_indentation(i am that i am)
-  File "<stdin>", line 1
-    text_indentation(i am that i am)
-                     ^^^^
-SyntaxError: invalid syntax. Perhaps you forgot a comma?
 >>> text_indentation("who are we? why are we here?")
 who are we?
-
+<BLANKLINE>
 why are we here?
-
+<BLANKLINE>
 >>> text_indentation("i really . don't know . . Really?")
 i really .
-
+<BLANKLINE>
 don't know .
-
+<BLANKLINE>
 .
-
+<BLANKLINE>
 Really?
-
+<BLANKLINE>
 >>> text_indentation("whaaaaaat      t  t t t t t t ttt t ? : ? .")
 whaaaaaat      t  t t t t t t ttt t ?
-
+<BLANKLINE>
 :
-
+<BLANKLINE>
 ?
-
+<BLANKLINE>
 .
-
+<BLANKLINE>
 >>> 
