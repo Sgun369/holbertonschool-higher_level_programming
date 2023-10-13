@@ -14,16 +14,12 @@ def text_indentation(text):
     Raises:
         TypeError: If the text is not a string.
     """
-
+    
     if not isinstance(text, str):
         raise TypeError("text must be a string")
     
-    lines = text.split('.')
-    for line in lines:
-        sentences = line.split('?')
-        for sentence in sentences:
-            phrases = sentence.split(':')
-            for phrase in phrases:
-                print(phrase.strip())
-            print()
-        print()
+    for char in ".?:":
+        text = text.replace(char, char + "\n\n")
+    list_lines = [lines.strip(' ') for lines in text.split('\n')]
+    revised = "\n".join(list_lines)
+    print(revised, end="")
