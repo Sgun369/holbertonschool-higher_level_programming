@@ -1,24 +1,24 @@
+>>> MyList = __import__('1-my_list').MyList
+>>> MyList.append(15)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: descriptor 'append' for 'list' objects doesn't apply to a 'int' object
 >>> my_list = MyList()
 >>> my_list.append(1)
 >>> my_list.append(4)
 >>> my_list.append(2)
 >>> my_list.append(3)
 >>> my_list.append(5)
+>>> print(my_list)
+[1, 4, 2, 3, 5]
 >>> my_list.print_sorted()
 [1, 2, 3, 4, 5]
->>> my_list = MyList()
->>> my_list.append(-99)
->>> my_list.append(99)
->>> my_list.append(-100)
->>> my_list.append(2)
->>> my_list.append(88)
->>> my_list.append(0)
->>> my_list.append(100)
+>>> print(my_list)
+[1, 4, 2, 3, 5]
+>>> my_list.append(0.369369)
+>>> my_list.append(369369)
+>>> print(my_list)
+[1, 4, 2, 3, 5, 0.369369, 369369]
 >>> my_list.print_sorted()
-[-100, -99, 0, 2, 88, 99, 100]
->>> my_list = MyList()
->>> my_list.append('w')
->>> my_list.append('a')
->>> my_list.append('A')
->>> my_list.append("true")
->>> my_list.append(18.55)
+[0.369369, 1, 2, 3, 4, 5, 369369]
+>>> 
