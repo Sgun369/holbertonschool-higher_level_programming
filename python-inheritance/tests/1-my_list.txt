@@ -1,30 +1,24 @@
->>> MyList = __import__('1-my_list').MyList
 >>> my_list = MyList()
 >>> my_list.append(1)
 >>> my_list.append(4)
 >>> my_list.append(2)
 >>> my_list.append(3)
 >>> my_list.append(5)
->>> print(my_list)
-[1, 4, 2, 3, 5]
 >>> my_list.print_sorted()
 [1, 2, 3, 4, 5]
->>> print(my_list)
-[1, 4, 2, 3, 5]
->>> my_list.append(5.555)
->>> print(my_list)
-[1, 4, 2, 3, 5, 5.555]
+>>> my_list = MyList()
+>>> my_list.append(-99)
+>>> my_list.append(99)
+>>> my_list.append(-100)
+>>> my_list.append(2)
+>>> my_list.append(88)
+>>> my_list.append(0)
+>>> my_list.append(100)
 >>> my_list.print_sorted()
-[1, 2, 3, 4, 5, 5.555]
->>> my_list.append(369.369)
->>> my_list.print_sorted()
-[1, 2, 3, 4, 5, 5.555, 369.369]
->>> my_list.append(0.369369)
->>> my_list.print_sorted()
-[0.369369, 1, 2, 3, 4, 5, 5.555, 369.369]
->>> my_list.append(True)
->>> print(my_list)
-[1, 4, 2, 3, 5, 5.555, 369.369, 0.369369, True]
->>> my_list.print_sorted()
-[0.369369, 1, True, 2, 3, 4, 5, 5.555, 369.369]
->>>
+[-100, -99, 0, 2, 88, 99, 100]
+>>> my_list = MyList()
+>>> my_list.append('w')
+>>> my_list.append('a')
+>>> my_list.append('A')
+>>> my_list.append("true")
+>>> my_list.append(18.55)
