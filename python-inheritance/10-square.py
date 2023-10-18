@@ -22,7 +22,4 @@ class Square(Rectangle):
         """"
         implementation of the area method
         """
-        return self.__size * self.__size
-
-    def __str__(self):
-        return "[square] {}/{}".format(self.__size, self.__size)
+        return self.__size ** 2
