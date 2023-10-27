@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """First Rectangle module"""
 
-from models.base import Base
+from base import Base
 
 
 class Rectangle(Base):
@@ -18,6 +18,11 @@ class Rectangle(Base):
     def area(self):
         """returns the area of the rectangle"""
         return self.__width * self.__height
+    
+    def display(self):
+        """prints in stdout the Rectangle instance with #"""
+        for i in range(self.__height):
+            print("{}".format("#" * self.__width))
 
     @property
     def width(self):
