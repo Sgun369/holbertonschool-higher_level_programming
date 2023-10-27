@@ -21,8 +21,9 @@ class Rectangle(Base):
 
     def display(self):
         """prints in stdout the Rectangle instance with #"""
+        print("{}".format("\n" * self.__y, end=""))
         for i in range(self.__height):
-            print("{}".format("#" * self.__width))
+            print("{}{}".format(" " * self.__x, "#" * self.__width))
 
     @property
     def width(self):
