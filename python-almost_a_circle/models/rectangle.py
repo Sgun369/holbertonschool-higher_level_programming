@@ -87,13 +87,13 @@ class Rectangle(Base):
         for arg in args:
             if i == 0:
                 self.id = arg
-            if arg == 1:
+            if i == 1:
                 self.__width = arg
-            if arg == 2:
+            if i == 2:
                 self.__height = arg
-            if arg == 3:
+            if i == 3:
                 self.__x = arg
-            if arg == 4:
+            if i == 4:
                 self.__y = arg
             i += 1
 
