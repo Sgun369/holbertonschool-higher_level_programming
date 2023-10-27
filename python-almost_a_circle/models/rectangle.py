@@ -81,8 +81,8 @@ class Rectangle(Base):
             raise ValueError("y must be >= 0")
         self.__y = value
 
-    def update(self, *args):
-        """assigns an argument to each attribute"""
+    def update(self, *args,**kwargs):
+        """assigns a key/value argument to attributes:"""
         i = 0
         for arg in args:
             if i == 0:
@@ -96,6 +96,19 @@ class Rectangle(Base):
             if i == 4:
                 self.__y = arg
             i += 1
+        if not args:
+            for key, value in kwargs.items():
+                if key == "id":
+                    self.id = value
+                if key == "width":
+                    self.__width = value
+                if key == "height":
+                    self.__height = value
+                if key == "x":
+                    self.__x = value
+                if key == "y":
+                    self.__y = value
+
 
     def __str__(self):
         """returns the string representation of the rectangle"""
