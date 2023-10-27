@@ -81,6 +81,22 @@ class Rectangle(Base):
             raise ValueError("y must be >= 0")
         self.__y = value
 
+    def update(self, *args):
+        """assigns an argument to each attribute"""
+        i = 0
+        for arg in args:
+            if i == 0:
+                self.id = arg
+            if arg == 1:
+                self.__width = arg
+            if arg == 2:
+                self.__height = arg
+            if arg == 3:
+                self.__x = arg
+            if arg == 4:
+                self.__y = arg
+            i += 1
+
     def __str__(self):
         """returns the string representation of the rectangle"""
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x,
