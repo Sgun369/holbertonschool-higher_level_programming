@@ -47,6 +47,8 @@ class Base:
             dummy = cls(1, 1)
         elif cls.__name__ == "Square":
             dummy = cls(1)
+        else:
+            dummy = cls()
         dummy.update(**dictionary)
         return dummy
 
@@ -58,5 +60,5 @@ class Base:
             with open(filename, "r") as f:
                 return [cls.create(**obj)
                         for obj in cls.from_json_string(f.read())]
-        except f is None:
+        except FileNotFoundError:
             return []

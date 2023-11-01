@@ -34,27 +34,13 @@ class Square(Rectangle):
 
     def update(self, *args, **kwargs):
         """assigns attributes:"""
-        i = 0
-        for arg in args:
-            if i == 0:
-                self.id = arg
-            if i == 1:
-                self.size = arg
-            if i == 2:
-                self.x = arg
-            if i == 3:
-                self.y = arg
-            i += 1
-        if not args:
+        if args:
+            attrs = ['id', 'size', 'x', 'y']
+            for i, arg in enumerate(args):
+                setattr(self, attrs[i], arg)
+        else:
             for key, value in kwargs.items():
-                if key == "id":
-                    self.id = value
-                if key == "size":
-                    self.size = value
-                if key == "x":
-                    self.x = value
-                if key == "y":
-                    self.y = value
+                setattr(self, key, value)
 
     def to_dictionary(self):
         """returns the dictionary representation of quare"""

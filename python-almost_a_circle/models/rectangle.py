@@ -83,31 +83,13 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         """assigns a key/value argument to attributes:"""
-        i = 0
-        for arg in args:
-            if i == 0:
-                self.id = arg
-            if i == 1:
-                self.__width = arg
-            if i == 2:
-                self.__height = arg
-            if i == 3:
-                self.__x = arg
-            if i == 4:
-                self.__y = arg
-            i += 1
-        if not args:
+        if args:
+            attrs = ['id', 'width', 'height', 'x', 'y']
+            for i, arg in enumerate(arg):
+                setattr(self, attrs[i], arg)
+        else:
             for key, value in kwargs.items():
-                if key == "id":
-                    self.id = value
-                if key == "width":
-                    self.__width = value
-                if key == "height":
-                    self.__height = value
-                if key == "x":
-                    self.__x = value
-                if key == "y":
-                    self.__y = value
+                setattr(self, key, value)
 
     def __str__(self):
         """returns the string representation of the rectangle"""
