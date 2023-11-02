@@ -45,13 +45,9 @@ class Base:
         """returns an instance with all attributes already set"""
         if cls.__name__ == "Rectangle":
             dummy = cls(1, 1)
-        elif cls.__name__ == "Square":
+        if cls.__name__ == "Square":
             dummy = cls(1)
-        else:
-            dummy = cls()
-
-        for key, value in dictionary.items():
-            setattr(dummy, key, value)
+        dummy.update(**dictionary)
         return dummy
 
     @classmethod
