@@ -1,5 +1,3 @@
--- mysql scriot to show databases
---show all DATABASES
-
- mysql -u root -p -e "SHOW DATABASES;"
+-- mysql script to show databases
+"SHOW DATABASES;"
 
