@@ -1,2 +1,2 @@
 -- as cript that prints description of the table.
-SHOW CREATE TABBLE first_table;
+SHOW CREATE TABLE first_table;
