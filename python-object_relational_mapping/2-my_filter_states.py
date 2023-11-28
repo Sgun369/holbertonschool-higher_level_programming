@@ -30,6 +30,7 @@ if __name__ == "__main__":
     rows = cursor.fetchall()
 
     for row in rows:
-        print(row)
+        if row[1] == state_name:
+            print(row)
     cursor.close()
     db.close()
