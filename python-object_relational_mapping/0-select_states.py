@@ -15,11 +15,11 @@ if __name__ == "__main__":
     """Create a cursor object to interact with the database."""
     cur = db.cursor()
 
-    """Execute a SQL query to select all stated from the 'stats' table.""""
+    """Execute a SQL query to select all stated from the 'stats' table."""
     cur.execute("SELECT * FROM states ORDER BY id ASC")
 
     """Fetch all the rows returned by the SQL query"""
     rows = cur.fetchall()
-    """print each row representing a state in the database.""""
-for row in rows:
-    print(row)
+    """print each row representing a state in the database."""
+    for row in rows:
+        print(row)
