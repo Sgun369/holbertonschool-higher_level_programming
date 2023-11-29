@@ -20,6 +20,6 @@ if __name__ == "__main__":
     with Session(engine) as session:
         result = session.query(State).filter(
             State.name.like("%a%")).order_by(State.id).all()
-        
+
         for state in result:
             print("{}: {}".format(state.id, state.name))
