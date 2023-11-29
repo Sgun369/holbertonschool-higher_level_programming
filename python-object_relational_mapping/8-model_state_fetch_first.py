@@ -12,7 +12,7 @@ if __name__ == "__main__":
         argv[1], argv[2], argv[3])
 
     """create the SQLAlchemy engine"""
-    engine = create_engine(connection, pool_pre_ping=True)
+    engine = create_engine(connection)
 
     Base.metadata.create_all(engine)
     """create a session to interact with the database"""
