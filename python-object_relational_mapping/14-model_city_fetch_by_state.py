@@ -20,7 +20,8 @@ if __name__ == "__main__":
 
     with Session(engine) as session:
         """query for all City objecrs, joining with the State model"""
-        cities = session.query(State.name, City.id, City.name).join(City, State.id == City.state_id).all()
+        cities = session.query(State.name, City.id, City.name).join(
+            City, State.id == City.state_id).all()
 
         for city in cities:
             print("{}: ({}) {}".format(city[0], city.id, city.name))
