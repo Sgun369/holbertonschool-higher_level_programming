@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   const url ='https://hellosalut.stefanbohacek.dev/?lang=fr';
-  const helloElement = document.getElementById('ello');
+  const helloElement = document.getElementById('hello');
 
   fetch(url)
   .then(response => response.json())
